@@ -18,3 +18,10 @@ The borderline category includes lines that would ideally require some repositio
 
 The abnormal category included lines that required immediate repositioning.
 
+## Submission File
+
+For each ID in the test set, you must predict a probability for all target variables. The file should contain a header and have the following format:
+
+StudyInstanceUID,ETT - Abnormal,ETT - Borderline,ETT - Normal,NGT - Abnormal,NGT - Borderline,NGT - Incompletely Imaged,NGT - Normal,CVC - Abnormal,CVC - Borderline,CVC - Normal,Swan Ganz Catheter Present
+
+
