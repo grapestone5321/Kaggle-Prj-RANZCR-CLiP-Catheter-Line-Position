@@ -25,3 +25,31 @@ For each ID in the test set, you must predict a probability for all target varia
 StudyInstanceUID,ETT - Abnormal,ETT - Borderline,ETT - Normal,NGT - Abnormal,NGT - Borderline,NGT - Incompletely Imaged,NGT - Normal,CVC - Abnormal,CVC - Borderline,CVC - Normal,Swan Ganz Catheter Present
 
 
+## Columns
+- StudyInstanceUID - unique ID for each image
+
+- ETT - Abnormal - endotracheal tube placement abnormal
+
+- ETT - Borderline - endotracheal tube placement borderline abnormal
+
+- ETT - Normal - endotracheal tube placement normal
+
+- NGT - Abnormal - nasogastric tube placement abnormal
+
+- NGT - Borderline - nasogastric tube placement borderline abnormal
+
+- NGT - Incompletely Imaged - nasogastric tube placement inconclusive due to imaging
+
+- NGT - Normal - nasogastric tube placement borderline normal
+
+- CVC - Abnormal - central venous catheter placement abnormal
+
+- CVC - Borderline - central venous catheter placement borderline abnormal
+
+- CVC - Normal - central venous catheter placement normal
+
+- Swan Ganz Catheter Present
+
+- PatientID - unique ID for each patient in the dataset
+
+
