@@ -68,7 +68,11 @@ https://arxiv.org/pdf/1705.02315.pdf
 https://arxiv.org/pdf/1812.01187.pdf
 
 
+## Deep Residual Learning for Image Recognition
+https://arxiv.org/pdf/1512.03385.pdf
 
+## Caffe: Convolutional Architecture for Fast Feature Embedding
+https://arxiv.org/pdf/1408.5093.pdf
 
 -------
 
