@@ -54,6 +54,24 @@ StudyInstanceUID,ETT - Abnormal,ETT - Borderline,ETT - Normal,NGT - Abnormal,NGT
 
 -------
 
+# Paper-1
+
+## ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases
+https://arxiv.org/pdf/1705.02315.pdf
+
+-------
+
+# Paper-2
+
+
+## Bag of Tricks for Image Classification with Convolutional Neural Networks
+https://arxiv.org/pdf/1812.01187.pdf
+
+
+
+
+-------
+
 # Progress
 ## Public Best LB Score: 0.962
 ## Private Score: 
