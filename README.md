@@ -52,4 +52,25 @@ StudyInstanceUID,ETT - Abnormal,ETT - Borderline,ETT - Normal,NGT - Abnormal,NGT
 
 - PatientID - unique ID for each patient in the dataset
 
+-------
+
+# Progress
+## Public Best LB Score: 0.962
+## Private Score: 
+
+-------
+
+## ResNet200D/inference Single Model LB 96.5
+https://www.kaggle.com/ammarali32/resnet200d-inference-single-model-lb-96-5
+
+
+
+
+
+
+
+
+-------
+
+
 
