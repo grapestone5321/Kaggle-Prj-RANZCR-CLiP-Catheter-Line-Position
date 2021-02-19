@@ -28,6 +28,12 @@ To calculate the final score, AUC is calculated for each of the 11 labels, then 
 
 The score is then the average of the individual AUCs of each predicted column.
 
+
+### Receiver operating characteristic: ROC
+https://en.wikipedia.org/wiki/Receiver_operating_characteristic
+
+
+
 -------
 
 ## Submission File
