@@ -18,6 +18,18 @@ The borderline category includes lines that would ideally require some repositio
 
 The abnormal category included lines that required immediate repositioning.
 
+-------
+
+## Evaluation
+
+Submissions are evaluated on area under the ROC curve between the predicted probability and the observed target.
+
+To calculate the final score, AUC is calculated for each of the 11 labels, then averaged. 
+
+The score is then the average of the individual AUCs of each predicted column.
+
+-------
+
 ## Submission File
 
 For each ID in the test set, you must predict a probability for all target variables. The file should contain a header and have the following format:
