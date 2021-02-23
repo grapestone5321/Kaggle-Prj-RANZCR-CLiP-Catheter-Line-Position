@@ -95,7 +95,7 @@ https://arxiv.org/pdf/1408.5093.pdf
 -------
 
 # Progress
-## Public Best LB Score: 0.962
+## Public Best LB Score: 0.965
 ## Private Score: 
 
 -------
@@ -106,7 +106,12 @@ https://www.kaggle.com/ammarali32/resnet200d-inference-single-model-lb-96-5
 
 
 
-
+### y_preds = (y_preds1.sigmoid().to('cpu').numpy() + y_preds2.sigmoid().to('cpu').numpy()) / 2
+            
+      y_preds = 0.6*y_preds1.sigmoid().to('cpu').numpy() + 0.4*y_preds2.sigmoid().to('cpu').numpy()    LB 0.965   ver3
+      y_preds = 0.5*y_preds1.sigmoid().to('cpu').numpy() + 0.5*y_preds2.sigmoid().to('cpu').numpy()    LB 0.965   ver2
+      y_preds = 0.4*y_preds1.sigmoid().to('cpu').numpy() + 0.6*y_preds2.sigmoid().to('cpu').numpy()    LB 0.965   ver4
+      y_preds = 0.2*y_preds1.sigmoid().to('cpu').numpy() + 0.8*y_preds2.sigmoid().to('cpu').numpy()    LB 0.965   ver5
 
 
 
