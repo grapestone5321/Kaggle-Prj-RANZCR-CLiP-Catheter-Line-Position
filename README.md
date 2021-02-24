@@ -109,12 +109,17 @@ https://www.kaggle.com/ammarali32/resnet200d-inference-single-model-lb-96-5
 ### y_preds = (y_preds1.sigmoid().to('cpu').numpy() + y_preds2.sigmoid().to('cpu').numpy()) / 2
             
       y_preds = 0.6*y_preds1.sigmoid().to('cpu').numpy() + 0.4*y_preds2    LB 0.965   ver3
-      y_preds = 0.5*y_preds1.sigmoid().to('cpu').numpy() + 0.5*y_preds2    LB 0.965   ver2
+      y_preds = 0.5*y_preds1.sigmoid().to('cpu').numpy() + 0.5*y_preds2    LB 0.965   ver2      #default
       y_preds = 0.4*y_preds1.sigmoid().to('cpu').numpy() + 0.6*y_preds2    LB 0.965   ver4
       y_preds = 0.2*y_preds1.sigmoid().to('cpu').numpy() + 0.8*y_preds2    LB 0.965   ver5
 
+### BATCH_SIZE = 128  #default
 
-
+      BATCH_SIZE = 128    LB 0.965   ver2   #default
+      BATCH_SIZE = 64     LB 0.965   ver6
+      
+      
+      
 -------
 
 
