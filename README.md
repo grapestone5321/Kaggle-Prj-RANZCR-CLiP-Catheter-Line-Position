@@ -118,8 +118,7 @@ https://www.kaggle.com/ammarali32/resnet200d-inference-single-model-lb-96-5
       BATCH_SIZE = 128    LB 0.965   ver2   #default
       BATCH_SIZE = 64     LB 0.965   ver6
       
-      
-      
+          
 -------
 
 
