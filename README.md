@@ -95,7 +95,7 @@ https://arxiv.org/pdf/1408.5093.pdf
 -------
 
 # Progress
-## Public Best LB Score: 0.965
+## Public Best LB Score: 0.966
 ## Private Score: 
 
 -------
@@ -120,6 +120,28 @@ https://www.kaggle.com/ammarali32/resnet200d-inference-single-model-lb-96-5
       
           
 -------
+
+## Ensemble of 2 best public notebooks
+https://www.kaggle.com/raghaw/ensemble-of-2-best-public-notebooks
+
+
+### predictions = (2 * predictions200d + predictions152d) / 3.0
+
+      predictions = 0.7 * predictions200d + 0.3 * predictions152d      LB         ver4
+      predictions = (2 * predictions200d + predictions152d) / 3.0      LB 0.966   ver1      #default
+      predictions = 0.6 * predictions200d + 0.4 * predictions152d      LB         ver2
+      predictions = 0.5 * predictions200d + 0.5 * predictions152d      LB         ver3
+
+
+
+
+
+-------
+
+
+
+
+
 
 
 
