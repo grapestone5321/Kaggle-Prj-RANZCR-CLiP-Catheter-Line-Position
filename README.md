@@ -127,10 +127,10 @@ https://www.kaggle.com/raghaw/ensemble-of-2-best-public-notebooks
 
 ### predictions = (2 * predictions200d + predictions152d) / 3.0
 
-      predictions = 0.7 * predictions200d + 0.3 * predictions152d      LB         ver4
+      predictions = 0.7 * predictions200d + 0.3 * predictions152d      LB 0.966   ver4      --- Best 209 -> 167
       predictions = (2 * predictions200d + predictions152d) / 3.0      LB 0.966   ver1      #default
-      predictions = 0.6 * predictions200d + 0.4 * predictions152d      LB         ver2
-      predictions = 0.5 * predictions200d + 0.5 * predictions152d      LB         ver3
+      predictions = 0.6 * predictions200d + 0.4 * predictions152d      LB 0.966   ver2
+      predictions = 0.5 * predictions200d + 0.5 * predictions152d      LB 0.966   ver3
 
 
 
