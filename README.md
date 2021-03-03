@@ -135,8 +135,12 @@ https://www.kaggle.com/raghaw/ensemble-of-2-best-public-notebooks
       predictions = 0.5 * predictions200d + 0.5 * predictions152d      LB 0.966   ver3
 
 
+### BATCH_SIZE = 128
 
+predictions = 0.8 * predictions200d + 0.2 * predictions152d:
 
+      BATCH_SIZE = 64    LB         ver8
+      BATCH_SIZE = 128   LB 0.966   ver5      #default
 
 -------
 
