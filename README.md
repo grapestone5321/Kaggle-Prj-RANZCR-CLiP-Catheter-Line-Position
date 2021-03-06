@@ -150,7 +150,9 @@ predictions = 0.8 * predictions200d + 0.2 * predictions152d:
 
 
       pred= (predictions200d + predictions200d_2 + 0.50 *predictions152d)/2.5:    LB 0.967   ver1
-      pred= 0.4*predictions200d + 0.4*predictions200d_2 + 0.2*predictions152d:    LB         ver2
+      
+      pred= 0.4*predictions200d + 0.4*predictions200d_2 + 0.2*predictions152d:    LB 0.967   ver2
+      pred= 0.5*predictions200d + 0.4*predictions200d_2 + 0.1*predictions152d:    LB         ver3
       
       
       
