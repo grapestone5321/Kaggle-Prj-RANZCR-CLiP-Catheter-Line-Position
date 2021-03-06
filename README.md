@@ -145,6 +145,22 @@ predictions = 0.8 * predictions200d + 0.2 * predictions152d:
 -------
 
 
+## Few best public notebook and dataset ensemble
+
+
+
+      pred= (predictions200d + predictions200d_2 + 0.50 *predictions152d)/2.5:    LB 0.967   ver1
+      pred= 0.4*predictions200d + 0.4*predictions200d_2 + 0.2*predictions152d:    LB         ver2
+      
+      
+      
+      
+      
+
+
+
+
+-------
 
 
 
