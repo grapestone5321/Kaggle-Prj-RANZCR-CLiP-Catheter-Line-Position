@@ -156,6 +156,7 @@ predictions = 0.8 * predictions200d + 0.2 * predictions152d:
       pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:    LB 0.967   ver4  --- Best  164 -> 163
       pred= 0.60*pred200d + 0.4*pred200d_2 + 0.00*pred152d:    LB 0.967   ver6            162 -> 162
       pred= 0.50*pred200d + 0.45*pred200d_2 + 0.05*pred152d:   LB 0.967   ver7            162 -> 166
+      pred= 0.60*pred200d + 0.35*pred200d_2 + 0.05*pred152d:   LB 0.967   ver8            173 -> 174
       
       
    
