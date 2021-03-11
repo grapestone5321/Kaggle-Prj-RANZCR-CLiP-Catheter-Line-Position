@@ -146,7 +146,7 @@ predictions = 0.8 * predictions200d + 0.2 * predictions152d:
 
 
 ## Few best public notebook and dataset ensemble
-
+https://www.kaggle.com/kiranchaudharyy/few-best-public-notebook-and-dataset-ensemble
 
 
       pred= (pred200d + pred200d_2 + 0.50 *pred152d)/2.5:    LB 0.967   ver1
@@ -157,11 +157,18 @@ predictions = 0.8 * predictions200d + 0.2 * predictions152d:
       pred= 0.60*pred200d + 0.4*pred200d_2 + 0.00*pred152d:    LB 0.967   ver6            162 -> 162
       pred= 0.50*pred200d + 0.45*pred200d_2 + 0.05*pred152d:   LB 0.967   ver7            162 -> 166
       pred= 0.60*pred200d + 0.35*pred200d_2 + 0.05*pred152d:   LB 0.967   ver8            173 -> 174
-      
+      pred= 0.65*pred200d + 0.30*pred200d_2 + 0.05*pred152d:   LB 0.967   ver9           
       
    
+### predictions200d_2 = inference(models200D_2, test_loader_512, device)
 
+pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
 
+      pred200d_2 = inference(models200D_2, test_loader_512, device)    LB 0.967   ver4  --- Best  164 -> 163
+      pred200d_2 = inference(models200D_2, test_loader_640, device)    LB    ver10
+      
+      
+      
 -------
 
 
