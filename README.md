@@ -164,10 +164,26 @@ https://www.kaggle.com/kiranchaudharyy/few-best-public-notebook-and-dataset-ense
 
 pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
 
-      pred200d_2 = inference(models200D_2, test_loader_512, device)    LB 0.967   ver4  --- Best  164 -> 163
+      pred200d_2 = inference(models200D_2, test_loader_512, device)    LB 0.967   ver4  --- (Best)  164 -> 163
       pred200d_2 = inference(models200D_2, test_loader_640, device)    LB    ver10
       
       
+### predictions200d = inference(models200D, test_loader_640, device)
+### #predictions200d = inference(models200D, test_loader_512, device)
+### #predictions200d_2 = inference(models200D_2, test_loader_512, device)
+### predictions200d_2 = inference(models200D_2, test_loader_640, device)
+### #predictions152d = inference(models152D, test_loader_640, device)
+### predictions152d = inference(models152D, test_loader_512, device)
+ 
+
+      predictions200d = inference(models200D, test_loader_640, device)
+      predictions200d_2 = inference(models200D_2, test_loader_640, device)
+      predictions152d = inference(models152D, test_loader_512, device)          
+
+      pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:     LB 0.968   ver12  --- Best
+      pred= 0.50*pred200d + 0.45*pred200d_2 + 0.05*pred152d:    LB    ver
+      
+          
       
 -------
 
