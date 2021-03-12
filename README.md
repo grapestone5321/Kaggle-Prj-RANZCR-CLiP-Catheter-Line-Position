@@ -168,12 +168,14 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
       pred200d_2 = inference(models200D_2, test_loader_640, device)    LB    ver10
       
       
-### predictions200d = inference(models200D, test_loader_640, device)
-### #predictions200d = inference(models200D, test_loader_512, device)
-### #predictions200d_2 = inference(models200D_2, test_loader_512, device)
-### predictions200d_2 = inference(models200D_2, test_loader_640, device)
-### #predictions152d = inference(models152D, test_loader_640, device)
-### predictions152d = inference(models152D, test_loader_512, device)
+      ### predictions200d = inference(models200D, test_loader_640, device)
+      ### #predictions200d = inference(models200D, test_loader_512, device)
+      
+      ### #predictions200d_2 = inference(models200D_2, test_loader_512, device)
+      ### predictions200d_2 = inference(models200D_2, test_loader_640, device)
+      
+      ### #predictions152d = inference(models152D, test_loader_640, device)
+      ### predictions152d = inference(models152D, test_loader_512, device)
  
 
       predictions200d = inference(models200D, test_loader_640, device)
