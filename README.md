@@ -185,7 +185,7 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
       pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:     LB 0.968   ver12
       pred= 0.5*pred200d + 0.45*pred200d_2 + 0.05*pred152d:     LB 0.968   ver15
       pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:     LB 0.968   ver14  --- Best  138 -> 133
-      pred= 0.4*pred200d + 0.55*pred200d_2 + 0.05*pred152d:     LB    ver16
+      pred= 0.4*pred200d + 0.55*pred200d_2 + 0.05*pred152d:     LB 0.968   ver16
           
       
 -------
