@@ -182,8 +182,10 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
       predictions200d_2 = inference(models200D_2, test_loader_640, device)
       predictions152d = inference(models152D, test_loader_512, device)          
 
-      pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:     LB 0.968   ver12  --- Best
-      pred= 0.50*pred200d + 0.45*pred200d_2 + 0.05*pred152d:    LB    ver
+      pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:     LB 0.968   ver12
+      pred= 0.50*pred200d + 0.45*pred200d_2 + 0.05*pred152d:    LB error   ver13
+      pred= 0.5*pred200d + 0.45*pred200d_2 + 0.05*pred152d:     LB    ver15
+      pred= 0.5*pred200d + 0.5*pred200d_2 + 0.05*pred152d:      LB 0.968   ver14  --- Best  138 -> 133
       
           
       
