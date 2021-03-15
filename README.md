@@ -203,7 +203,7 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
 
 pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:
 
-      BATCH_SIZE = 8     LB        ver24
+      BATCH_SIZE = 8     LB 0.968        ver24
       BATCH_SIZE = 16    LB 0.968        ver22
       BATCH_SIZE = 32    LB 0.968        ver21
       BATCH_SIZE = 128   LB 0.968        ver14  --- Best
