@@ -176,7 +176,16 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
       
       ### #predictions152d = inference(models152D, test_loader_640, device)
       ### predictions152d = inference(models152D, test_loader_512, device)
- 
+
+
+### predictions200d = inference(models200D, test_loader_640, device)
+### predictions200d_2 = inference(models200D_2, test_loader_640, device)
+### predictions152d = inference(models152D, test_loader_640, device)  
+
+      pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:     LB 0.968   ver19
+
+
+
 ### predictions200d = inference(models200D, test_loader_640, device)
 ### predictions200d_2 = inference(models200D_2, test_loader_640, device)
 ### predictions152d = inference(models152D, test_loader_512, device)          
@@ -190,11 +199,16 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
       pred = 0.5*pred200d + 0.5*pred200d_2 + 0.0*pred152d        LB 0.968   ver18
 
 
-### predictions200d = inference(models200D, test_loader_640, device)
-### predictions200d_2 = inference(models200D_2, test_loader_640, device)
-### predictions152d = inference(models152D, test_loader_640, device)  
+### BATCH_SIZE = 128
 
-      pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:     LB    ver
+pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:
+
+      BATCH_SIZE = 16    LB 0.968        ver22
+      BATCH_SIZE = 32    LB 0.968        ver21
+      BATCH_SIZE = 128   LB 0.968        ver14  --- Best
+      BATCH_SIZE = 256   LB         ver23
+      BATCH_SIZE = 512   LB error        ver20
+
 
 
 -------
