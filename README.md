@@ -215,11 +215,19 @@ pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:
 
 y_preds2 = model(images.flip(-1))
 
-      y_preds2 = model(images.flip(-1))   LB 0.968        ver14
-      y_preds2 = model(images.flip(1))    LB        ver27
-      y_preds2 = model(images.flip(0))    LB        ver28
+      y_preds2 = model(images.flip(-1))   LB 0.968       ver14
+      y_preds2 = model(images.flip(1))    LB 0.959       ver27
+      y_preds2 = model(images.flip(0))    LB        ver
                 
 
+
+### y_preds = (y_preds1.sigmoid().to('cpu').numpy() + y_preds2.sigmoid().to('cpu').numpy()) / 2
+
+      y_preds=0.5*y_preds1.sigmoid().to('cpu').numpy() + 0.5*y_preds2.sigmoid().to('cpu').numpy()
+      
+      y_preds=0.2*y_preds1.sigmoid().to('cpu').numpy() + 0.8*y_preds2.sigmoid().to('cpu').numpy()   LB        ver28
+      
+      
 -------
 
 
