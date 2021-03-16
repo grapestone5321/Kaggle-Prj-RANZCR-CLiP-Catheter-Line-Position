@@ -198,6 +198,8 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
       pred = 0.45*pred200d + 0.45*pred200d_2 + 0.1*pred152d      LB 0.968   ver17
       pred = 0.5*pred200d + 0.5*pred200d_2 + 0.0*pred152d        LB 0.968   ver18
 
+      pred = 0.44*pred200d + 0.51*pred200d_2 + 0.05*pred152d     LB 0.968   ver26
+      pred = 0.46*pred200d + 0.49*pred200d_2 + 0.05*pred152d     LB 0.968   ver25
 
 ### BATCH_SIZE = 128
 
@@ -211,6 +213,12 @@ pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:
       BATCH_SIZE = 512   LB error        ver20
 
 
+y_preds2 = model(images.flip(-1))
+
+      y_preds2 = model(images.flip(-1))   LB 0.968        ver14
+      y_preds2 = model(images.flip(1))    LB        ver27
+      y_preds2 = model(images.flip(0))    LB        ver28
+                
 
 -------
 
