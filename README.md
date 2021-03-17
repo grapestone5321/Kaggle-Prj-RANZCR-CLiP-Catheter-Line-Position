@@ -95,8 +95,8 @@ https://arxiv.org/pdf/1408.5093.pdf
 -------
 
 # Progress
-## Public Best LB Score: 0.966
-## Private Score: 
+## Public Best LB Score: 0.968
+## Private Score: 0.970
 
 -------
 
@@ -165,7 +165,7 @@ https://www.kaggle.com/kiranchaudharyy/few-best-public-notebook-and-dataset-ense
 pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
 
       pred200d_2 = inference(models200D_2, test_loader_512, device)    LB 0.967   ver4  --- (Best)  164 -> 163
-      pred200d_2 = inference(models200D_2, test_loader_640, device)    LB    ver10
+      pred200d_2 = inference(models200D_2, test_loader_640, device)    LB 0.968   ver10
       
       
       ### predictions200d = inference(models200D, test_loader_640, device)
@@ -192,7 +192,7 @@ pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:
 
       pred= 0.55*pred200d + 0.4*pred200d_2 + 0.05*pred152d:     LB 0.968   ver12
       pred= 0.5*pred200d + 0.45*pred200d_2 + 0.05*pred152d:     LB 0.968   ver15
-      pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:     LB 0.968   ver14  --- Best  138 -> 133
+      pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:     LB 0.968   ver14  --- (Best)  138 -> 133
       pred= 0.4*pred200d + 0.55*pred200d_2 + 0.05*pred152d:     LB 0.968   ver16
           
       pred = 0.45*pred200d + 0.45*pred200d_2 + 0.1*pred152d      LB 0.968   ver17
@@ -208,7 +208,7 @@ pred= 0.45*pred200d + 0.5*pred200d_2 + 0.05*pred152d:
       BATCH_SIZE = 8     LB 0.968        ver24
       BATCH_SIZE = 16    LB 0.968        ver22
       BATCH_SIZE = 32    LB 0.968        ver21
-      BATCH_SIZE = 128   LB 0.968        ver14  --- Best
+      BATCH_SIZE = 128   LB 0.968        ver14  --- (Best)
       BATCH_SIZE = 256   LB error        ver23
       BATCH_SIZE = 512   LB error        ver20
 
@@ -217,7 +217,7 @@ y_preds2 = model(images.flip(-1))
 
       y_preds2 = model(images.flip(-1))   LB 0.968       ver14
       y_preds2 = model(images.flip(1))    LB 0.959       ver27
-      y_preds2 = model(images.flip(0))    LB        ver
+      y_preds2 = model(images.flip(0))    LB 0.925       ver29
                 
 
 
@@ -225,8 +225,9 @@ y_preds2 = model(images.flip(-1))
 
       y_preds=0.5*y_preds1.sigmoid().to('cpu').numpy() + 0.5*y_preds2.sigmoid().to('cpu').numpy()
       
-      y_preds=0.2*y_preds1.sigmoid().to('cpu').numpy() + 0.8*y_preds2.sigmoid().to('cpu').numpy()   LB        ver28
-      
+      y_preds=0.2*y_preds1.sigmoid().to('cpu').numpy() + 0.8*y_preds2.sigmoid().to('cpu').numpy()   LB 968       ver28
+      y_preds=0.7*y_preds1.sigmoid().to('cpu').numpy() + 0.3*y_preds2.sigmoid().to('cpu').numpy()   LB 968       ver30 ---Best
+      y_preds=0.9*y_preds1.sigmoid().to('cpu').numpy() + 0.1*y_preds2.sigmoid().to('cpu').numpy()   LB 968       ver31 
       
 -------
 
